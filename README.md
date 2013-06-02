@@ -1,24 +1,28 @@
 VCU-Dissertation-TEX
 ====================
 
-TEX Files for writing dissertation at Virginia Commonwealth University. VCU Graduate school publishes a dissertation guidelines manual. Students can use the style files provided here to write their dissertation.
+TEX Files for writing dissertation at Virginia Commonwealth University. VCU Graduate school publishes a dissertation <a href="http://www.graduate.vcu.edu/pdfs/Thesis%20and%20Dissertation%20Manual%20Fall%202012.pdf">guidelines manual</a>. Students can use style files provided here to write their dissertation.
 
-Files:
-vcuthesis.cls
-vcuthesis.sty
-references.bib
-vcuthesis.tex
-vcuthesis.pdf
+**Files**
 
-Requires:
-TEX software to be installed and additional .
+vcuthesis.cls, vcuthesis.sty, references.bib, vcuthesis.tex, vcuthesis.pdf
 
-Packages used:
+**Requires**
+
+TEX software to be installed and additional packages.
+
+**Packages used**
+
 graphicx - for figures
+
 amsmath - for equations
+
 subfigure - for sub-figures
+
 biblatex - for bibliography
+
 appendix - for appendices
+
 hyperref - for hyperlinks within document
 
 All files (.cls, .sty, .tex, .bib) need to be in a directory. Compiling .tex file generates .pdf file.
