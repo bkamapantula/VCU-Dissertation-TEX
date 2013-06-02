@@ -11,7 +11,7 @@
 
 % ---------- identification ----------
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{tamuccthesis}[2009/12/05 Texas A&M University - Corpus Christi CSCI Thesis Class]
+\ProvidesClass{vcuthesis}[2009/12/05 Texas A&M University - Corpus Christi CSCI Thesis Class]
 % ---------- initial code ----------
 \newcommand{\pt@size}{}	% \@ptsize declared in report.cls so using \pt@size
 % ---------- declaration of options ----------
