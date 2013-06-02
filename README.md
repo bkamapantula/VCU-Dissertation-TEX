@@ -1,7 +1,7 @@
 VCU-Dissertation-TEX
 ====================
 
-TEX Files for writing dissertation at Virginia Commonwealth University. VCU Graduate school publishes a dissertation guidelines manual. Students can use style files provided here to write their dissertation.
+TEX Files for writing dissertation at Virginia Commonwealth University. VCU Graduate school publishes a dissertation <a href="http://www.graduate.vcu.edu/pdfs/Thesis%20and%20Dissertation%20Manual%20Fall%202012.pdf">guidelines manual</a>. Students can use style files provided here to write their dissertation.
 
 **Files**
 
