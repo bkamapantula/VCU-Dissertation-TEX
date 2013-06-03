@@ -871,7 +871,7 @@ cl@#2\endcsname\@nil\@nil
 \newcommand{\type}{Thesis}              % Sets default document type to be a thesis
 %\newcommand{\degree}{Doctor of Philosophy} % Sets default degree to be a MS, 6/17/93
 %\newcommand{\major}{Computer Science} % Sets default major to be ELEN, 6/17/93
-\newcommand{\director}{Preetam Ghosh}
+%\newcommand{\director}{Preetam Ghosh}
 
 \def\maketitlepage{\begin{titlepage}
  \let\footnotesize\small       % Local definitions to make \thanks produce
@@ -889,8 +889,8 @@ cl@#2\endcsname\@nil\@nil
    \vskip 4em                  % Vertical space, 6-->8, 6/17/93
    {\lineskip .75em            % Author  
      \begin{tabular}[t]{c} \\ by\\ \uppercase\expandafter{\authorsname}\\
-	{\pastdegreeone}\\ %B.E., Dr. B.A.M.U., India - September 2000 to April 2004\\
-	{\pastdegreetwo}\\ %M.S., The University of Southern Mississippi, USA - Fall 2005 to Fall 2006	
+	{\pastdegreeone}\\
+	{\pastdegreetwo}\\
      \end{tabular}\par}
    \vskip 4em                  % Vertical space after author.
      \begin{tabular}[t]{c} \\ %by\\ \uppercase\expandafter{\authorsname}\\
