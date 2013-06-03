@@ -5,7 +5,15 @@ TEX Files for writing dissertation at Virginia Commonwealth University. VCU Grad
 
 **Files**
 
-vcuthesis.cls, vcuthesis.sty, references.bib, vcuthesis.tex, vcuthesis.pdf
+vcuthesis.cls - Class file
+
+vcuthesis.sty - Styling file
+
+references.bib - bibliography file (references must be added here)
+
+vcuthesis.tex - file to be edited
+
+vcuthesis.pdf - your dissertation!
 
 **Requires**
 
