@@ -361,7 +361,7 @@ cl@#2\endcsname\@nil\@nil
 \newdimen\toddhack
 \newdimen\twoem \twoem 0em
 \newdimen\zeroem \zeroem 0em
-\newdimen\fignumbox \fignumbox 4em
+\newdimen\fignumbox \fignumbox 2em
 
 \def\tocnumflushright{
 \twoem 2em
@@ -455,11 +455,11 @@ cl@#2\endcsname\@nil\@nil
 %	this section is adapted from def of \@dottedtocline
 % change hangindent in next line to 
 %  leftskip 6-20-89 to work with later latex changes
-    {\leftskip 2em\relax \rightskip \@tocrmarg \parfillskip -\rightskip
-     \parindent 2em\relax\@afterindenttrue
+    {\leftskip 1em\relax \rightskip \@tocrmarg \parfillskip -\rightskip
+     \parindent 1em\relax\@afterindenttrue
     \interlinepenalty\@M
     \leavevmode
-    \@tempdima 4em\relax       % width of box holding chapter number
+    \@tempdima 1em\relax       % width of box holding chapter number | Changed from 4em to 1 em on 5th June, 2013 - Bhanu Kamapantula
 % change 6-20-89
     \advance\leftskip \@tempdima \hbox{}\hskip -\leftskip
 % end 6-20-89
@@ -486,9 +486,14 @@ cl@#2\endcsname\@nil\@nil
 %\def\l@subparagraph{\@dottedtocline{5}{12em}{6em}}
 %
 % thesis mod
-\def\l@section{\@dottedtocline{1}{7em}{2.0em}} % changed from 1.5 to 2.0 and fixed spacing for section 3.10, 3.11 # 14th December 2012 Bhanu
-\def\l@subsection{\@dottedtocline{2}{9em}{2.5em}} % changed from 1.5 to 2.5 fix spacing for subsection
-\def\l@subsubsection{\@dottedtocline{3}{11em}{3.5em}} % changed from 2.5 to 3.5 fix spacing for subsection
+% Changed from 7em to 3em on 5th June, 2013 - Bhanu Kamapantula
+\def\l@section{\@dottedtocline{1}{3em}{2.0em}} % changed from 1.5 to 2.0 and fixed spacing for section 3.10, 3.11 # 14th December 2012 Bhanu
+
+% Changed from 9em to 5em on 5th June, 2013 - Bhanu Kamapantula
+\def\l@subsection{\@dottedtocline{2}{5em}{2.5em}} % changed from 1.5 to 2.5 fix spacing for subsection
+
+% Changed from 11em to 7em on 5th June, 2013 - Bhanu Kamapantula
+\def\l@subsubsection{\@dottedtocline{3}{7em}{3.5em}} % changed from 2.5 to 3.5 fix spacing for subsection
 \def\l@paragraph{\@dottedtocline{4}{13em}{1.5em}}
 \def\l@subparagraph{\@dottedtocline{5}{14em}{1.5em}}
 %
@@ -528,7 +533,7 @@ cl@#2\endcsname\@nil\@nil
      \parindent 0pt\relax\@afterindenttrue
      \interlinepenalty\@M
      \leavevmode               
-     \@tempdima \fignumbox\relax       % width of box holding figure number
+     \@tempdima \fignumbox \relax    % width of box holding figure number
                                        % \fignumbox default to 4em
      \advance\leftskip \@tempdima \hbox{}\hskip -\leftskip
        #1\nobreak\leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern 
@@ -884,23 +889,21 @@ cl@#2\endcsname\@nil\@nil
    \vskip -2em                 % Adjust vertical position. 
    {\uppercase\expandafter{\thesistitle} \par}       % Set title in \normal size.
    \vskip 4.5em                % Vertical space after title. 6em --> 4.5em, 6/17/93
-   {\singlespace Submitted in Partial Fulfillment of the Requirements for the
-     Degree of \\ \uppercase{\degree}\smallskip} at Virginia Commonwealth University
+   {\singlespace A dissertation submitted in partial fulfillment of the requirements for the degree of \\ \uppercase{\degree}\smallskip} at Virginia Commonwealth University.
    \vskip 4em                  % Vertical space, 6-->8, 6/17/93
    {\lineskip .75em            % Author  
      \begin{tabular}[t]{c} \\ by\\ \uppercase\expandafter{\authorsname}\\
 	{\pastdegreeone}\\ %B.E., Dr. B.A.M.U., India - September 2000 to April 2004\\
-	{\pastdegreetwo}\\ %M.S., The University of Southern Mississippi, USA - Fall 2005 to Fall 2006	
+	%{\pastdegreetwo}\\ %M.S., The University of Southern Mississippi, USA - Fall 2005 to Fall 2006	
      \end{tabular}\par}
-   \vskip 4em                  % Vertical space after author.
+   \vskip 2em                  % Vertical space after author.
      \begin{tabular}[t]{c} \\ %by\\ \uppercase\expandafter{\authorsname}\\
-	Director: {\committeechair}, {\chairposition}\\
-	Department of {\major}
+	Director: {\committeechair}, \\ {\chairposition}, 	Department of {\major}
      \end{tabular}\par
-   \vskip 4em                  % Vertical space, 6-->8, 6/17/93
+   \vskip 12em                  % Vertical space, 6-->8, 6/17/93
    {Virginia Commonwewalth University \\Richmond, Virginia\par}
-   \vskip 3em                  % Vertical space, 5-->6.5, 6/17/93
-   {\thesismonth \par}                   % Date
+  % \vskip 3em                  % Vertical space, 5-->6.5, 6/17/93
+   {\thesismonth}, {\graduatingyear \par}                   % Date
    %\vskip 5.5em                % Vertical space, 5-->6.5, 6/17/93
    %{Major Subject: \major}
 \end{center} \par
@@ -1054,13 +1057,14 @@ cl@#2\endcsname\@nil\@nil
 %\setcounter{page}%{1}
 \addcontentsline{toc}{chapter}{Abstract}
 \begin{center}
-{\bf Abstract\\ \vskip 3em }
-\thesistitle \\ \vskip 2em by \authorsname \\
-\vskip 3em
-{\singlespace Submitted in Partial Fulfillment of the Requirements for the
-Degree of \\ \uppercase{\degree}\smallskip} at Virginia Commonwealth University
-\vskip 2em
-Virginia Commonwealth University, 2012
+{\bf Abstract\\ \vskip 1em }
+%\end{center}
+\uppercase\expandafter{\thesistitle} \\ \vskip 1em By \authorsname \\
+\vskip 0.5em
+{\singlespace A dissertation submitted in partial fulfillment of the requirements for the degree of  \uppercase{\degree}\smallskip} at Virginia Commonwealth University.
+\vskip 1em
+%\begin{center}
+Virginia Commonwealth University, {\graduatingyear}.
 \vskip 2em
 Director: {\committeechair}, {\chairposition}, Department of {\major}
 \end{center}
