@@ -893,13 +893,8 @@ cl@#2\endcsname\@nil\@nil
    \vskip 4em                  % Vertical space, 6-->8, 6/17/93
    {\lineskip .75em            % Author  
      \begin{tabular}[t]{c} \\ by\\ \uppercase\expandafter{\authorsname}\\
-<<<<<<< HEAD
 	{\pastdegreeone}\\ %B.E., Dr. B.A.M.U., India - September 2000 to April 2004\\
 	%{\pastdegreetwo}\\ %M.S., The University of Southern Mississippi, USA - Fall 2005 to Fall 2006	
-=======
-	{\pastdegreeone}\\
-	{\pastdegreetwo}\\
->>>>>>> 712391ca43d52a038e582920bee5f336383c056a
      \end{tabular}\par}
    \vskip 2em                  % Vertical space after author.
      \begin{tabular}[t]{c} \\ %by\\ \uppercase\expandafter{\authorsname}\\
