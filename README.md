@@ -41,4 +41,5 @@ All files (.cls, .sty, .tex, .bib) need to be in a directory. Compiling .tex fil
 Examples for including a figure (and sub-figure), table, equation, mathematical expression, enumeration and labeling have been provided. All references must be included in .bib file.
 
 **To-do**
+----------------------------------------------------
 Thesis template in Microsoft Word.
