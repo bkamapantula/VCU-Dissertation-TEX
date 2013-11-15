@@ -41,7 +41,9 @@
 
 % BIBLATEX package for bibliography
 %\usepackage[sorting=none]{biblatex}
-\usepackage[style=authoryear,doi=true,url=true]{biblatex}
+\usepackage[style=authoryear,doi=true,url=true, maxcitenames=2]{biblatex}
+% adds comma after authors and before year in inline citation
+\renewcommand*{\nameyeardelim}{\addcomma}
 
 %%%%%%%%%%%
 
@@ -122,7 +124,7 @@ Rebum fabellas ea ius, mea electram ullamcorper no, et sed graece offendit nomin
 \chapter{Introduction \label{chap:chapintro} }
 Section \ref{sec:background} desribes the background of this dissertation.
 \section{Section in a chapter \label{sec:background} }
-Rebum fabellas ea ius, mea electram ullamcorper no, et sed graece offendit nominati. Id vel nonumy commune sadipscing, eros philosophia pri ne, ea duo splendide hendrerit deterruisset. Eam delectus constituto ex, usu ad quot tollit adipisci. Quando mollis corrumpit ea mel, omnium singulis neglegentur id mea. Ut usu nostro audire forensibus. Ei eam errem minimum deserunt, oblique interesset eu vel, te erroribus ocurreret vix \parencite{Narendra_1990}. Figure \ref{fig:fig1} describes quick brown fox jumps over the dog.
+Rebum fabellas ea ius, mea electram ullamcorper no, et sed graece offendit nominati. Id vel nonumy commune sadipscing, eros philosophia pri ne, ea duo splendide hendrerit deterruisset. Eam delectus constituto ex, usu ad quot tollit adipisci. Quando mollis corrumpit ea mel, omnium singulis neglegentur id mea. Ut usu nostro audire forensibus. Ei eam errem minimum deserunt, oblique interesset eu vel, te erroribus ocurreret vix \parencite{Narendra_1990}. Figure \ref{fig:fig1} describes quick brown fox jumps over the dog \parencite{tran2009development}.
 
 % Figure %
 \begin{figure}

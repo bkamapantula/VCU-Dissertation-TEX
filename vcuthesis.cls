@@ -889,7 +889,7 @@ cl@#2\endcsname\@nil\@nil
    \vskip -2em                 % Adjust vertical position. 
    {\uppercase\expandafter{\thesistitle} \par}       % Set title in \normal size.
    \vskip 4.5em                % Vertical space after title. 6em --> 4.5em, 6/17/93
-   {\singlespace A dissertation submitted in partial fulfillment of the requirements for the degree of \\ \uppercase{\degree}\smallskip} at Virginia Commonwealth University.
+   {\singlespace A {\thesisordissertation} submitted in partial fulfillment of the requirements for the degree of  \uppercase{\degree}\smallskip} at Virginia Commonwealth University.
    \vskip 4em                  % Vertical space, 6-->8, 6/17/93
    {\lineskip .75em            % Author  
      \begin{tabular}[t]{c} \\ by\\ \uppercase\expandafter{\authorsname}\\
@@ -1061,12 +1061,12 @@ cl@#2\endcsname\@nil\@nil
 %\end{center}
 \uppercase\expandafter{\thesistitle} \\ \vskip 1em By \authorsname \\
 \vskip 0.5em
-{\singlespace A dissertation submitted in partial fulfillment of the requirements for the degree of  \uppercase{\degree}\smallskip} at Virginia Commonwealth University.
+{\singlespace A {\thesisordissertation} submitted in partial fulfillment of the requirements for the degree of  \uppercase{\degree}\smallskip} at Virginia Commonwealth University.
 \vskip 1em
 %\begin{center}
 Virginia Commonwealth University, {\graduatingyear}.
 \vskip 2em
-Director: {\committeechair}, {\chairposition}, Department of {\major}
+Director: {\committeechair},\\ {\chairposition}, Department of {\major}
 \end{center}
 \hspace*{\parindent} #1}
 
